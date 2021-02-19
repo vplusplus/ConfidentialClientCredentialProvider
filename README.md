@@ -1,8 +1,8 @@
 # ConfidentialClientCredentialProvider
 
-TokenCredential manages cache/refresh of Access Tokens. The `ConfidentialClientCredentialProvider` serves cached versions of TokenCredential, targeted for confidential client applications. Consider `Azure.Identity.DefaultAzureCredential` for a more general purpose use. 
+The `ConfidentialClientCredentialProvider` serves cached versions of TokenCredential, targeted for confidential client applications. The TokenCredential manages cache/auto-refresh of AccessTokens. 
 
-* Supports Managed identities (system assigned or user assigned), ClientCertificate and ClientSecret.
+* Supports System-assigned Managed identities, User-assigned managed identities, ClientCertificate and ClientSecret.
 * Targeted for deamons; no interactive login options.
 * Supports multiple named client credentials.
 * No need for app restart on config changes.
@@ -10,4 +10,4 @@ TokenCredential manages cache/refresh of Access Tokens. The `ConfidentialClientC
 * Average performance under 2.755 microSec (tested over 1 million iterations).
 * AccessToken cache/auto-refresh endurance tested for 24 hours.
 
-
+Consider `Azure.Identity.DefaultAzureCredential` for a more general purpose use.
