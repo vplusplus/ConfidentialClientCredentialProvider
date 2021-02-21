@@ -6,8 +6,8 @@ The `ConfidentialClientCredentialProvider` serves cached versions of TokenCreden
 * Targeted for deamons; no interactive login options.
 * Supports multiple named client credentials.
 * No need for app restart on config changes.
-* AuthorityHost can be represented using names as defined in `Azure.Identity.AzureAuthorityHosts` or a specific URI.
+* AuthorityHost can be represented using names as defined in [`Azure.Identity.AzureAuthorityHosts`](https://docs.microsoft.com/en-us/dotnet/api/azure.identity.azureauthorityhosts) or a specific URI.
 * Average performance under 2.755 microSec (tested over 1 million iterations).
 * AccessToken cache/auto-refresh endurance tested for 24 hours.
 
-Consider `Azure.Identity.DefaultAzureCredential` for a more general purpose use.
+Consider [`Azure.Identity.DefaultAzureCredential`](https://docs.microsoft.com/en-us/dotnet/api/azure.identity.defaultazurecredential) for a more general purpose use.
